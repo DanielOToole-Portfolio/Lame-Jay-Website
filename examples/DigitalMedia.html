@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lame Jay</title>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="DigitalMedia.css" />
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+
+
+
+	<script type="text/javascript">
+
+
+
+
+	$(window).load(function(){
+		$('.empty').hide()
+		$('.empty2').hide()
+  setTimeout(function(){
+		 $('.empty').fadeIn("slow")
+		 $('.empty2').fadeIn("slow")
+	 }, 1000);
+});
+
+
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+			    sectionsColor: ['white', '#F44336', '#ee005a', '#2C3E50', '#673AB7'],
+					loopTop: true,
+			    loopBottom: true,
+			    // navigation: {
+			    // 	'position': 'right',
+			   	// 	'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
+			   	// },
+			    // afterRender: function(){
+			    // 	$('#pp-nav').addClass('custom');
+			    // },
+			    // afterLoad: function(anchorLink, index){
+			    // 	if(index>1){
+			    // 		$('#pp-nav').removeClass('custom');
+			    // 	}else{
+			    // 		$('#pp-nav').addClass('custom');
+			    // 	}
+			    // }
+			});
+	    });
+
+			$(document).ready(function(){
+  $('.menu-btn').click(function(){
+    $('nav').toggleClass('active')
+  })
+});
+    </script>
+
+
+    <style>
+	#section1 img{
+		margin: 20px 0;
+		opacity: 0.7;
+	}
+	/* colors
+	 * --------------------------------------- */
+	#colors2,
+	#colors3{
+		position: absolute;
+		height: 163px;
+		width: 362px;
+		z-index: 1;
+		background-repeat: no-repeat;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+	#colors2{
+		background-image: url(imgs/colors2.gif);
+		top:0;
+	}
+	#colors3{
+		background-image: url(imgs/colors3.gif);
+		bottom:0;
+	}
+
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+	/* #pp-nav.custom .pp-tooltip{
+		color: #AAA;
+	} */
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+
+
+	<nav role="navigation">
+	  <div id="menuToggle">
+
+	    <input type="checkbox" />
+
+	    <span></span>
+	    <span></span>
+	    <span></span>
+
+
+	    <ul id="menu">
+				<li data-menuanchor="page1" class="active"><a href="#page1" class="active">Home</a></li>
+				<li data-menuanchor="page2"><a href="#page2">The Game Plan</a></li>
+				<li data-menuanchor="page3"><a href="#page3">Our Work</a></li>
+				<li data-menuanchor="page4"><a href="#page4">The Team</a></li>
+				<li data-menuanchor="page5"><a href="#page5">Contact US</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+
+			<!-- <div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+
+
+	<nav>
+
+
+	<ul class="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1" class="active">Home</a></li>
+		<li data-menuanchor="page2"><a href="#page2">The Game Plan</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Our Work</a></li>
+		<li data-menuanchor="page4"><a href="#page4">The Team</a></li>
+		<li data-menuanchor="page5"><a href="#page5">Contact US</a></li>
+	</ul>
+
+</nav> -->
+
+</header>
+
+	<div id="pagepiling">
+
+		<!-- page1 start -->
+	    <div class="section container-fluid" id="section1">
+
+				<div class="row">
+
+					<div class="icon col-md-6 col-sm-6">
+						<div class="icon-inner">
+								<div class="triangle">
+    								<div class="empty"></div>
+								</div>
+								<div class="triangle2">
+    								<div class="empty2"></div>
+								</div>
+						</div>
+					</div>
+
+					<div class="company col-md-6 col-sm-6">
+						<div class="company-inner">
+	    			<h1>Lame <span>Jay</span></h1>
+						<p>Helping you to rebrand your company</p>
+					</div>
+					</div>
+
+			</div>
+
+	   </div>
+			<!-- page1 end -->
+
+
+			<!-- page2 start -->
+			<div class="section" id="section2">
+			<div class="game">
+				<h1>The Game Plan</h1>
+			</div>
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="steps">
+							<h2> Step 1 - Assestment</h2>
+							<p>
+								Your brand is already great, but with your
+								help with can make it even better. This is where we take
+								a look and see where we could improve.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="steps">
+							<h2> Step 2 - Prototype</h2>
+							<p>
+								With your help this is where we build upon your
+								already great brand with a few adjustments
+								tailor-made to your company.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="steps">
+							<h2> Step 3 - Implementation</h2>
+							<p>
+								Only when your happy with the adjustments we
+								have made then we launch the new and improved brand.
+								<br><br>
+								There is no last step for our clients, we continue to
+								support you until your happy.
+							</p>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</div>
+			<!-- page2 end -->
+
+				<!-- page3 start -->
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>Our Work</h1>
+	    	</div>
+
+				<div class="work-main container">
+
+						<!-- image row1 start -->
+						<div class="row">
+
+							<div class="col-md-3 box">
+								<div class="card">
+	    						<img class="card-img-top" src="img/nut.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+      							<h4>Nutella</h4>
+    							</div>
+	    					</div>
+							</div>
+							<div class="col-md-3 box">
+								<div class="card">
+	    						<img class="card-img-top" src="img/sam.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+      							<h4>Samsung</h4>
+    							</div>
+	    					</div>
+							</div>
+							<div class="col-md-3 box">
+								<div class="card">
+	    						<img class="card-img-top" src="img/toy.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+      							<h4>Toyota</h4>
+    							</div>
+	    					</div>
+							</div>
+							<div class="col-md-3 box">
+								<div class="card">
+	    						<img class="card-img-top" src="img/mic.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+      							<h4>Microsoft</h4>
+    							</div>
+	    					</div>
+							</div>
+
+						</div>
+
+						<!-- image row2 start -->
+						<div class="row">
+
+							<div class="col-md-3 box">
+								<div class="card">
+									<img class="card-img-top" src="img/sony.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+										<h4>Sony</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 box">
+								<div class="card">
+									<img class="card-img-top" src="img/apple.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+										<h4>Apple</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 box">
+								<div class="card">
+									<img class="card-img-top" src="img/nike.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+										<h4>Nike</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 box">
+								<div class="card">
+									<img class="card-img-top" src="img/bmw.jpeg" alt="Card image" style="width:100%">
+									<div class="details">
+										<h4>BMW</h4>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+	    </div>
+				<!-- page3 end -->
+
+
+					<!-- page4 start -->
+	    <div class="section" id="section4">
+				<div class="team">
+	    		<h1>Our Team</h1>
+	    	</div>
+					<div class="team-main container">
+
+							<!-- image row1 start -->
+							<div class="row">
+
+								<div class="col-md-4">
+									<div class="team-card">
+										<div class="front"><img src="img/team1.jpeg"></div>
+										<div class="back">
+											<div class="team-details">
+												<h2>Harry Kane</h2><br><span>Senior Product Designer</span>
+												<div class="social-icons">
+													<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="team-card">
+										<div class="front"><img src="img/team2.jpeg"></div>
+										<div class="back">
+											<div class="team-details">
+												<h2>Ren Tay</h2><br><span>Senior Brand Designer</span>
+												<div class="social-icons">
+													<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="team-card">
+										<div class="front"><img src="img/team3.jpeg"></div>
+										<div class="back">
+											<div class="team-details">
+												<h2>Kevin Ken</h2><br><span>Senior Brand Designer</span>
+												<div class="social-icons">
+													<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+
+						</div>
+
+	    	</div>
+				<!-- page4 end -->
+
+
+
+				<!-- page5 start -->
+				<div class="section" id="section5">
+					<div class="con">
+	    		<h1>Contact Us</h1>
+	    	</div>
+
+				<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3"></div>
+
+					<div class="col-md-6">
+
+
+						<div class="screen">
+
+							<div class="screen-body">
+								<div class="screen-body-item left">
+
+									<div class="app-contact">CONTACT INFO : +01 587 546 8877</div>
+								</div>
+							<div class="screen-body-item">
+								<div class="app-form">
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="NAME">
+									</div>
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="EMAIL">
+									</div>
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="CONTACT NO">
+									</div>
+									<div class="app-form-group message">
+										<input class="app-form-control" placeholder="MESSAGE">
+									</div>
+									<div class="app-form-group buttons">
+										<!-- <button class="app-form-button">CANCEL</button> -->
+										<button class="app-form-button">SEND</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					</div>
+
+					<div class="col-md-3"></div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+				</div>
+
+
+
+				<!-- page5 end -->
+
+
+
+	    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
